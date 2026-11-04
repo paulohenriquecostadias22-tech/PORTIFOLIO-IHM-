@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio pessoal de Paulo Henrique Costa Dias, estudante de Análise e Desenvolvimento de Sistemas.">
+    <title>Paulo Henrique | Portfólio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <nav class="navegacao container" aria-label="Navegação principal">
+            <a class="logo" href="#inicio">PH<span>.</span></a>
+
+            <ul class="menu">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre mim</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="inicio container" id="inicio">
+            <div class="texto-inicio">
+                <p class="saudacao">Olá, seja bem-vindo ao meu portfólio!</p>
+                <h1>Paulo Henrique<br><span>Costa Dias</span></h1>
+                <h2>Estudante de Análise e Desenvolvimento de Sistemas</h2>
+                <p class="descricao">
+                    Estou construindo minha trajetória na área de tecnologia,
+                    aprendendo programação, banco de dados e sistemas operacionais.
+                </p>
+                <a class="botao" href="#projetos">Conheça meu projeto</a>
+            </div>
+
+            <div class="foto-inicio">
+                <img src="imagens/perfil.jpeg" alt="Foto de perfil de Paulo Henrique Costa Dias">
+            </div>
+        </section>
+
+        <section class="secao sobre" id="sobre">
+            <div class="container">
+                <p class="subtitulo">Um pouco sobre mim</p>
+                <h2 class="titulo-secao">Sobre mim</h2>
+                <p class="texto-sobre">
+                    Meu nome é Paulo Henrique Costa Dias e sou estudante do curso
+                    Superior de Tecnologia em Análise e Desenvolvimento de Sistemas.
+                    Tenho interesse pela área de tecnologia e estou desenvolvendo
+                    meus conhecimentos em programação, banco de dados e Linux.
+                    Busco aprender na prática e ampliar minhas habilidades por meio
+                    de atividades e projetos acadêmicos.
+                </p>
+            </div>
+        </section>
+
+        <section class="secao" id="habilidades">
+            <div class="container">
+                <p class="subtitulo">Conhecimentos em desenvolvimento</p>
+                <h2 class="titulo-secao">Minhas habilidades</h2>
+
+                <div class="grade-habilidades">
+                    <article class="cartao-habilidade">
+                        <h3>Linguagem C</h3>
+                        <p>Estudos de lógica de programação e fundamentos da linguagem C.</p>
+                    </article>
+
+                    <article class="cartao-habilidade">
+                        <h3>MySQL</h3>
+                        <p>Criação e organização de bancos de dados, tabelas e relacionamentos.</p>
+                    </article>
+
+                    <article class="cartao-habilidade">
+                        <h3>Linux</h3>
+                        <p>Utilização do sistema Linux e execução de comandos pelo terminal.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="secao projetos" id="projetos">
+            <div class="container">
+                <p class="subtitulo">Atividades acadêmicas</p>
+                <h2 class="titulo-secao">Meu projeto</h2>
+
+                <article class="cartao-projeto">
+                    <div class="icone-projeto" aria-hidden="true">SQL</div>
+                    <div class="conteudo-projeto">
+                        <p class="categoria">Projeto acadêmico • Banco de dados</p>
+                        <h3>Banco de Dados de Ocorrências Aeronáuticas</h3>
+                        <p>
+                            Projeto desenvolvido com MySQL para organizar informações
+                            sobre ocorrências aeronáuticas. A estrutura utiliza cinco
+                            tabelas: aeronave, fator_contribuinte, ocorrencia,
+                            ocorrencia_tipo e recomendacao, conectadas por chaves
+                            primárias e estrangeiras.
+                        </p>
+                                   <a
+                                      class="botao"
+                                      href="https://github.com/paulohenriquecostadias22-tech/projeto-bd"
+                                      target="_blank"
+                                      rel="noopener noreferrer">
+
+                                   </a>
+                        <div class="etiquetas">
+                            <span>MySQL</span>
+                            <span>SQL</span>
+                            <span>Relacionamentos</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="secao contato" id="contato">
+            <div class="container">
+                <p class="subtitulo">Vamos conversar?</p>
+                <h2 class="titulo-secao">Entre em contato</h2>
+                <p class="texto-contato">
+                    Você pode utilizar o formulário abaixo para enviar uma mensagem.
+                </p>
+
+               
+                <form class="formulario" action="mailto:paulohdias@gmail.com" method="post" enctype="text/plain">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem..." required></textarea>
+
+                    <button class="botao" type="submit">Enviar mensagem</button>
+                </form>
+                <p class="aviso-formulario">
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="container">
+            <p>© 2026 Paulo Henrique Costa Dias. Desenvolvido com HTML e CSS.</p>
+        </div>
+    </footer>
+</body>
+</html>
